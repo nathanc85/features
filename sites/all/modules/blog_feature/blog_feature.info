@@ -1,0 +1,15 @@
+name = Blog Feature
+description = This is a module created with Features for the Blog Content Type
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = image
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_blog_image
+features[field_base][] = field_subtitle
+features[field_instance][] = node-classicblog-body
+features[field_instance][] = node-classicblog-field_blog_image
+features[field_instance][] = node-classicblog-field_subtitle
+features[node][] = classicblog
